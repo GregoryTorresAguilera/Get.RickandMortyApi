@@ -1,0 +1,11 @@
+
+
+  <h1 class="title">Rick And Morty Chars</h1>
+  
+<div *ngIf="characterList" class="container">
+  <div *ngFor="let character of characterList" class="character">
+      <h3>{{ character.id }} - {{ character.name }}</h3>
+      <img [src]="character.image" [alt]="character.name">
+      <p>Status: {{ character.status }}</p>
+    </div>
+  </div>
